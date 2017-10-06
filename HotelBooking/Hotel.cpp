@@ -1,5 +1,4 @@
 // Author : Dilmanpreet nandu
-// Student ID: 100271865
 
 #include <iostream>
 #include <string>
