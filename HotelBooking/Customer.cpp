@@ -1,7 +1,5 @@
 // Author : Dilmanpreet nandu
-// Student ID: 100271865
 // date: 4 october 2017
-// was having issues seeked help from https://stackoverflow.com/questions/11920449/my-string-isnt-copying-from-private-variables
 
 #include <iostream>
 #include <sstream>
