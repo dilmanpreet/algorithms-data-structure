@@ -1,5 +1,4 @@
 // Author : Dilmanpreet nandu
-// Student ID: 100271865
 // date: 4 october 2017
  
 #include <iostream>
