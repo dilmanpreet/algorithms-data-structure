@@ -19,8 +19,8 @@ int main()
 	
    
    ///test program that creates a the customers  
-		Customer Customer1("a","b","a@abc.com");
-		Customer Customer2("c","d","c@abc.com");
+		Customer Customer1("Bob","Hill","a@abc.com");
+		Customer Customer2("Chad","Munroe","c@abc.com");
 		Customer John("John", "Doe", "johndoe@gmail.com");
 		
    Hotel empire("empire");
@@ -39,9 +39,19 @@ int main()
    
    
    //Display the outputs for the examples 
-		cout << "The Room for "<< "Booking ID: " << Book1.getBooking() << " is "  << Book1.getRoomType() <<endl;
-		cout << "The Room for "<< "Booking ID: " << Book2.getBooking() << " is " << Book2.getRoomType()  << endl;
-		cout << "The Room for "<< "Booking ID: " << Book2.getBooking() << " is "  << Book2.getRoomType() << endl;
+		cout << "The Room for Booking ID: " << Book1.getBooking() << " is "  << Book1.getRoom().getRoomNumber() <<endl;		
+		cout<< "Room booked in the name of " << Book1.getCustomer().getFirstName()<< " for a " << Book1.getRoomType() << " bedroom suite"<<endl;
+		cout<< "Final bill amount for $" <<  Book1.getRoom().getRoomPrice() << " emailed to " << Book1.getCustomer().getEmail()<< endl;
+		
+		
+		cout << "\nThe Room for Booking ID: " << Book2.getBooking() << " is "  << Book2.getRoom().getRoomNumber() <<endl;		
+		cout<< "Room booked in the name of " << Book2.getCustomer().getFirstName()<< " for a " << Book2.getRoomType() << " bedroom suite"<<endl;
+		cout<< "Final bill amount for $" <<  Book2.getRoom().getRoomPrice() << " emailed to " << Book2.getCustomer().getEmail()<< endl;
+		
+		
+		cout << "\nThe Room for Booking ID: " << Book3.getBooking() << " is "  << Book3.getRoom().getRoomNumber() <<endl;		
+		cout<< "Room booked in the name of " << Book3.getCustomer().getFirstName()<< " for a " << Book3.getRoomType() << " bedroom suite"<<endl;
+		cout<< "Final bill amount for $" <<  Book3.getRoom().getRoomPrice() << " emailed to " << Book3.getCustomer().getEmail()<< endl;
 		
     
       return 0;
