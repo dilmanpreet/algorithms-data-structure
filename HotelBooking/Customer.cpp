@@ -1,5 +1,5 @@
 // Author : Dilmanpreet nandu
-// date: 4 october 2017
+// date: 8 october 2017
 
 #include <iostream>
 #include <sstream>
@@ -16,7 +16,7 @@ Customer::Customer(){
    
 }
 //constructor with the values 
-Customer (  FirstName ,  LastName,  email){
+Customer::Customer(string FirstName, string LastName, string email){
   // CustomerSeqN++;
 	Fname = FirstName;
 	Lname = LastName;

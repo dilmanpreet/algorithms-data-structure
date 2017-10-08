@@ -17,25 +17,27 @@ class Booking
 	//All the private methods are created here
 private:
    int bookingId;
+	static int bookingSeqN;
 	Hotel hotel;
 	Room room;
-	string roomType;
+	string roomT;
 	Customer customers;
 
 
 	//All the public methods are created here
 public:
-   Booking(Hotel h, string roomType, Customer x);
+   Booking(Hotel& h, string roomType, Customer x);
 	
 	Hotel getHotel();
-	int getBookingID();
-   Room getRoom();
-	Customer getCustomer();
+	int getBooking() ;
+string getRoomType();
+   Room getRoom() ;
+	Customer getCustomer() ;
 	
 //mutator functions 
    
-	void setHotel(Hotel h);
+	//void setHotel(Hotel h);
 	void setRoomType(string roomType);
-   void setCustomer(Customer x);
+   //void setCustomer(Customer x);
 };
 #endif
