@@ -16,15 +16,15 @@ private:
 	string RoomType;
 	string RooomNumber;
 	double roomPrice;
-   string available;
-
+   bool available;
+	
 
 	//All the public methods are created here
 public:
 	
 	Room();	//default constructor
 	
-	Room(string Roomno, double rate, string Roomtyp, string avail);
+	Room(string Roomno, double rate, string Roomtyp);
 
 
 //mutator functions
@@ -32,12 +32,12 @@ public:
    void setRoomNumber(string Roomno);
 	void setRoomPrice(double rate);
 	void setRoomType(string Roomtyp);
-	void setRooomAvailability(string avail);
+	void setRoomAvailability(bool avail);
 
 	string getRoomNumber();
 	double getRoomPrice();
 	string getRoomType();
-	string getRoomAvailability();
+	bool getRoomAvailability();
 	
 };
 #endif

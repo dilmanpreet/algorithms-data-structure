@@ -1,6 +1,5 @@
 // Author : Dilmanpreet nandu
-// Student ID: 100271865
-
+// date: 8 october 2017
 #include <iostream>
 #include <string>
 using namespace std;
@@ -12,14 +11,14 @@ Room::Room()
     RoomType= "Single";
 	 RooomNumber=" ";
 	 roomPrice= 100.00;
-    
+    available=true;
 }
 //constructor with the values 
-Room::Room(string Roomno, double rate, string Roomtyp, string avail){
+Room::Room(string Roomno, double rate, string Roomtyp){
    RoomType= Roomtyp;
 	 RooomNumber= Roomno;
 	 roomPrice= rate;
-    available= avail;
+    available= true;
 }
 
 
@@ -28,7 +27,7 @@ void Room::setRoomNumber(string Roomno) {
 	RooomNumber = Roomno;
 }
 // member function that sets the rate of the room  
-void Room::setRooomPrice(double rate) {
+void Room::setRoomPrice(double rate) {
 	roomPrice = rate;
 }
 
@@ -38,7 +37,7 @@ void Room::setRoomType(string Roomtyp) {
 }
 
 // member function that sets the availability of room
-void Room::setRoomAvailability(string avail) {
+void Room::setRoomAvailability(bool avail) {
 	available = avail;
 }
 
@@ -58,6 +57,6 @@ string Room::getRoomType() {
 }
 
 // member function that retuns the availability of the room
-string Room::getRoomAvailability() {
+bool Room::getRoomAvailability() {
 	return available;
 }
